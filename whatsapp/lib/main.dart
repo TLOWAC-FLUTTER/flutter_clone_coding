@@ -10,10 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Whats App',
       home: Scaffold(
         body: Center(
-          child: Text('Demo Page'),
+          child: Text('Demo '),
         ),
       ),
     );
