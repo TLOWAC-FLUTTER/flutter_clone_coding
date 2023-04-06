@@ -118,3 +118,34 @@ Like the package? Please give it a 👍 here: https://pub.dev/packages/flutter_n
 ### 3) Splash 페이지 완성
 
 ![picture 2](images/0b5b9f3299a1afdbea0720798a0c9ae8761d063dad5b65c72f84820cf267be68.png)  
+
+
+## MediaQuery 사용
+> 디바이스별로 달라지는 width 를 대응하기 위해 MediaQuery 를 사용한다.
+
+
+### 1) MediaQuery > Width 대응하기
+
+```dart
+
+SizedBox(
+  width: MediaQuery.of(context).size.width - 100
+  height: 42
+  . . .
+)
+
+
+```
+
+### 2) MediaQuery > Height 대응하기
+
+```dart
+
+SizedBox(
+  width: 100
+  height: MediaQuery.of(context).size.height - 100
+  . . .
+)
+
+
+```
