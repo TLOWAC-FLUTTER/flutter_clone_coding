@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/featuure/welcome/pages/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Whats App',
       home: Scaffold(
         body: Center(
-          child: Text('Demo '),
+          child: WelcomePage(),
         ),
       ),
     );
