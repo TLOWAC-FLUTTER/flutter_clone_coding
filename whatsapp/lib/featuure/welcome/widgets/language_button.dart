@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/common/extension/custom_theme_extension.dart';
 import 'package:whatsapp/common/utils/color_assets.dart';
 
 class LanguageButton extends StatelessWidget {
@@ -11,14 +12,14 @@ class LanguageButton extends StatelessWidget {
     return Container(
       width: 150,
       child: Material(
-        color: Color(0xFF182229),
+        color: context.theme.langBtnBgColor,
         borderRadius: BorderRadius.circular(20),
         child: InkWell(
           // 버튼 클릭시 이벤트
           onTap: () {},
           borderRadius: BorderRadius.circular(20),
           splashFactory: NoSplash.splashFactory,
-          highlightColor: const Color(0xFF09141A),
+          highlightColor: context.theme.langBtnHighlightColor,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 16),
             child: Row(

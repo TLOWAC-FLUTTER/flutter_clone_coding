@@ -1,6 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:whatsapp/common/extension/custom_theme_extension.dart';
 import 'package:whatsapp/common/utils/color_assets.dart';
 import 'package:whatsapp/common/widgets/custom_elevated_button.dart';
 import 'package:whatsapp/featuure/welcome/widgets/language_button.dart';
@@ -25,7 +24,7 @@ class WelcomePage extends StatelessWidget {
                 ),
                 child: Image.asset(
                   'assets/images/circle.png',
-                  color: ColorAssets.greenDark,
+                  color: context.theme.circleImageColor,
                 ),
               ),
             ),
