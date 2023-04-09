@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/common/extension/custom_theme_extension.dart';
 import 'package:whatsapp/common/utils/color_assets.dart';
 
 ThemeData darkTheme() {
@@ -6,6 +7,9 @@ ThemeData darkTheme() {
   return base.copyWith(
     backgroundColor: ColorAssets.backgroundDark,
     scaffoldBackgroundColor: ColorAssets.backgroundDark,
+    extensions: [
+      CustomThemeExtension.darkMode,
+    ],
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: ColorAssets.greenDark,
