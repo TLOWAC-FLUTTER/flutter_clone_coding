@@ -21,11 +21,10 @@ class CustomerElevatedButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-            backgroundColor: ColorAssets.greenDark, //버튼 배경 색깔
-            foregroundColor: Colors.black, // 버튼 텍스트 색깔
-            splashFactory: NoSplash.splashFactory,
-            elevation: 0,
-            shadowColor: Colors.transparent),
+          splashFactory: NoSplash.splashFactory,
+          elevation: 0,
+          shadowColor: Colors.transparent,
+        ),
         child: Text(
           text,
           style: TextStyle(fontWeight: FontWeight.bold),
