@@ -14,4 +14,5 @@ class ColorAssets {
 
   static const Color backgroundDark = Color(0xFFF111B21);
   static const Color backgroundLight = Color(0xFFFFFFFF);
+  static const Color backgroundGrey = Color(0xFF202C33);
 }
