@@ -11,8 +11,7 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: ColorAssets.backgroundDark,
-      body: Column(
+      body: (Column(
         children: [
           Expanded(
             child: Align(
@@ -40,7 +39,6 @@ class WelcomePage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
                   ),
                 ),
                 PolicyAndTerms(),
@@ -56,7 +54,7 @@ class WelcomePage extends StatelessWidget {
             ),
           )
         ],
-      ),
+      )),
     );
   }
 }
